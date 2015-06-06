@@ -38,6 +38,6 @@ if (count _this > 2) then {
 };
 publicvariable "PO3_tasks_Tasks";
 
-if (!isdedicated && PO3_tasks_initDone) then {
+if (isdedicated && PO3_tasks_initDone) then {
 	PO3_tasks_Tasks spawn PO3_fnc_handleTaskEvent;
 };
