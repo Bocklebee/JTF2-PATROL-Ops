@@ -27,6 +27,6 @@ for "_i" from 0 to (count PO3_tasks_Tasks - 1) do {
 
 publicvariable "PO3_tasks_Tasks";
 
-if (!isdedicated && PO3_tasks_initDone) then {
+if (isdedicated && PO3_tasks_initDone) then {
 	PO3_tasks_Tasks spawn PO3_fnc_handleTaskEvent;
 };
